@@ -15,6 +15,7 @@ fs.createReadStream('/home/kevin/Projects/musicfind/backend/music.csv')
         await Band.create({
             name: row.band,
             song: row.song,
+            album: row.album,
             // Map other files from csv to your model
         });
     } catch (error) {
